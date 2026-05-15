@@ -1,0 +1,100 @@
+.popular-section {
+  padding: 80px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+}
+.popular-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.popular-header h2{
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #0B254B;
+  margin-bottom: 15px;
+  font-family: "Poppins"; 
+}
+.popular-header p{
+  font-size: 1.0rem;
+  font-weight: 400;
+  color: #5E6E89;
+  font-family: "Poppins";
+}
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 20px;
+}
+
+.popular-card {
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.popular-card:hover {
+  transform: translateY(-5px);
+}
+.popular-img{
+  background-color: #F7F8FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popular-img img{
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+.popular-info{
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+.popular-info h4{
+  font-size: 16px;
+  color: #1d2939;
+  font-weight: 500;
+  margin: 0;
+  font-family: "Poppins";
+}
+.popular-info p{
+  color: #56b280;
+  font-weight: 500;
+  font-size: 1.0rem;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Responsive Popular Grid */
+@media (max-width: 1280px) {
+  .popular-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .popular-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 375px) {
+  .popular-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  .popular-info {
+    padding: 15px;
+  }
+}

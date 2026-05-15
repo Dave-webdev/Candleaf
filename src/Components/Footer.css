@@ -1,0 +1,100 @@
+.footer-desktop {
+  background-color: #272727;
+  width: 100%;
+}
+.footer-widgets {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+}
+.separator img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+.footer-main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-brand {
+  flex: 4;
+}
+.footer-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-text{
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Poppins";
+}
+.footer-links-grid {
+  flex: 4;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-column{
+  margin-bottom: 50px;
+}
+.column-header {
+  display: block;
+  color: #56b280;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Avenir";
+}
+.footer-item {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-family: "Poppins";
+}
+.footer-bottom {
+  background-color: #f7f8f9;
+  padding: 25px 0;
+  width: 100%;
+}
+.footer-bottom-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #5e6e82;
+  font-size: 0.85rem;
+}
+
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-main-content {
+    flex-direction: column; /* Stacks branding on top of links */
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand {
+    margin-bottom: 40px;
+  }
+
+  .footer-logo-row {
+    justify-content: center; /* Centers logo for mobile */
+  }
+
+  .footer-links-grid {
+    width: 100%;
+    flex-direction: column; /* Stacks Discovery, About, Info vertically */
+    gap: 30px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column; /* Stacks copyright and designer name */
+    gap: 15px;
+    text-align: center;
+  }
+}
